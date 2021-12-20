@@ -1,3 +1,4 @@
+
 get conversion
 Cnvrt = input("What converstion do you want me to calculate? (please type full words) [__ to__]")
 get num and evaluate
@@ -16,21 +17,23 @@ elif (Cnvrt == "pounds to kilograms"):
 else:
     print ("I'm sorry, I don't know how to convert that yet!")
 
+
 pygame.init()
 pygame.display.set_mode()
 scn_width = 800
 scn_height = 800
 screen = pygame.display.set_mode((scn_width,scn_height))
 BLUE = (0,0,255)
-#RED = (255,0,0)
-#screen.fill(BLUE)
-#pygame.draw.rect(screen,RED,[375,350,50,100])
-#pygame.draw.circle(screen,RED,[50,50],50)
-#print(pygame.font.get_fonts())
-#font = pygame.font.SysFont("lato",100)
-#text = font.render("Hello World",True,RED)
-#screen.blit(text,[500,100])
-#pygame.display.flip()
+RED = (255,0,0)
+screen.fill(BLUE)
+pygame.draw.rect(screen,RED,[375,350,50,100])
+pygame.draw.circle(screen,RED,[50,50],50)
+print(pygame.font.get_fonts())
+font = pygame.font.SysFont("lato",100)
+text = font.render("Hello World",True,RED)
+screen.blit(text,[500,100])
+pygame.display.flip()
+
 
 light_blink = input("Blink Light? y/n:")
 while light_blink == "y":
